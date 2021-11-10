@@ -1,0 +1,90 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn
+{
+    background-color: white;
+    color: orangered;
+    margin:10px 2px ;
+    padding: 4px;
+    border: 2px solid orangered;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.btnHesap
+{
+    background-color: white;
+    color: orangered;
+    margin:10px 2px ;
+    padding: 4px;
+    border: 2px solid orangered;
+}
+
+.btnHesap:hover
+{
+    background-color: white;
+    color: orangered; 
+}
+
+.input
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.input div input:hover
+{
+    border: 2px solid black;
+}
+
+.input div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+
+}
+
+.input div label
+{
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.input div input
+{
+    border: 2px solid orangered;
+}
+
+.input div button
+{
+   color: black;
+   font-size: 15px;
+   font-weight: bold;
+}
+
+.sonuc
+{
+    
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: orangered;
+    
+    
+}
