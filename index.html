@@ -29,36 +29,36 @@
         </nav>  
    -->
         <div class="button">
-            <button class="btn" id="1">Üçgenin Alanını ve Çevre  Hesaplama </button>
-            <button class="btn" id="2">Daire Alanı ve Çevre Hesaplama</button>
-            <button class="btn" id="3">Dikdörtgen Alan ve Çevre Hesaplama</button>
-            <button class="btn" id="4">Kare Alan ve Çevre Hesaplama </button>
-            <button class="btn" id="5">Yamuk Alan ve Çevre Hesaplama </button>
-            <button class="btn" id="6">Altıgen Alan ve Çevre Hesaplama </button>
+            <button class="btn" id="1" name="ucgen" onclick="hesapla()">Üçgenin Alanını ve Çevre  Hesaplama </button>
+            <button class="btn" id="2" name="daire" onclick="hesapla()">Daire Alanı ve Çevre Hesaplama</button>
+            <button class="btn" id="3" name="dikdortgen" onclick="hesapla()">Dikdörtgen Alan ve Çevre Hesaplama</button>
+            <button class="btn" id="4" name="kare" onclick="hesapla()">Kare Alan ve Çevre Hesaplama </button>
+            <button class="btn" id="5" name="yamuk" onclick="hesapla()">Yamuk Alan ve Çevre Hesaplama </button>
+            <button class="btn" id="6" name="altigen" onclick="hesapla()">Altıgen Alan ve Çevre Hesaplama </button>
         </div>
         <div class="input">
             <div class="kenar">
-                <label for="" class="kenar">Kenar:</label>
-                <input type="text" class="k">
+                <label for="kenar" class="kenar" >Kenar:</label>
+                <input type="text" class="k" id="kenar" name="kenar">
             </div>
             <div class="yukseklik">
-                <label for="" class="yukseklik">Yükseklik:</label>
-                <input type="text" class="h">
+                <label for="yukseklik" class="yukseklik">Yükseklik:</label>
+                <input type="text" class="h" id="yukseklik" name="yukseklik">
             </div>
            <div class="taban">
-                <label for="" class="taban">Alt Taban:</label>
-                <input type="text" class="t">
+                <label for="taban" class="taban">Alt Taban:</label>
+                <input type="text" class="t" id="taban" name="taban">
            </div>
            <div class="yaricap">
-            <label for="" class="yaricap">Yarı Çap:</label>
-            <input type="text" class="r" >
+            <label for="cap" class="yaricap">Yarı Çap:</label>
+            <input type="text" class="r" id="cap" name="yaricap">
        </div>
            <div>
-               <button class="btnHesap" id="7">Hesapla</button>
+               <button class="btnHesap" id="7" onclick="hesapla()">Hesapla</button>
            </div>
            <div>
-               <label for="" >Sonuç:</label>
-               <input type="text" class="sonuc" disabled>
+               <label for="result" >Sonuç:</label>
+               <input type="text" id="result" class="sonuc" disabled>
            </div>
         </div>
 

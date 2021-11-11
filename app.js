@@ -1,14 +1,23 @@
-var kenar=document.getElementsByClassName("k").value;
-var yukseklik=document.getElementsByClassName("h").value;
-var taban=document.getElementsByClassName("t ").value;
-var yaricap=document.getElementsByClassName("r").value;
-const hesapla=document.getElementsByClassName(".btnHesap ")
-const buttons=document.querySelectorAll(".btn button")
+ var kenar,yukseklik,yaricap,hesapla,buttons,result;
+ 
+ 
+ 
+ 
+ 
+ kenar=document.kenar.value;
+ yukseklik=document.yukseklik.value;
+ taban=document.taban.value;
+ yaricap=document.yaricap.value;
+ 
+ buttons=document.querySelectorAll(".btn button")
+ 
 
-kenar=Number(kenar);
-yukseklik=Number(yukseklik);
-taban=Number(taban);
-yaricap=Number(yaricap);
+
+
+function hesapla(){
+   return sonuc;
+   console.log("tıkladın beni");
+}
 
 function ucgen(kenar,yukseklik,taban){
    const alan= ((taban)*(yukseklik))/2;
