@@ -33,6 +33,49 @@
     color: orangered; 
 }
 
+
+
+.sekiller img
+{
+  width: auto;
+  height: 250px;
+  margin: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#ucgen_sekil
+{
+  display:none;
+}
+
+#daire_sekil
+{
+  display:none;
+}
+
+#dikdortgen_sekil
+{
+  display:none;
+}
+
+#yamuk_sekil
+{
+  display:none;
+}
+
+#altigen_sekil
+{
+  display:none;
+}
+
+#kare_sekil
+{
+  display:none;
+}
+
 .input
 {
     display: flex;
@@ -75,16 +118,18 @@
    font-weight: bold;
 }
 
-.sonuc
+.result
 {
     
     width: 200px;
-    height: 100px;
+    height: 200px;
+    padding-top: 20px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
-    color: orangered;
+    font-size: 20px;
+    color: black;
+    border: 2px solid orangered;
     
     
 }
