@@ -1,70 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/7cc2d38101.js" crossorigin="anonymous"></script>
+  <title>Document</title>
 </head>
 <body>
-   <!--
-        <nav>  
-        <ul>  
-        <li>  
-        <a href="#"> Üçgenin Alanını ve Çevre  Hesaplama </a>  
-        </li>  
-        <li>  
-        <a href="#">  Daire Alanı ve Çevre Hesaplama </a>  
-        </li>  
-        <li>  
-        <a href="#">  Dikdörtgen Alan ve Çevre Hesaplama  </a>  
-        </li>  
-        <li> <a href="#"> Kare Alan ve Çevre Hesaplama  </a>  
-        </li>  
-        <li>  
-        <a href="#"> Join Us </a>  
-        </li>  
-        </ul>  
-        </nav>  
-   -->
-        <div class="button">
-            <button class="btn" id="1" name="ucgen" onclick="hesapla()">Üçgenin Alanını ve Çevre  Hesaplama </button>
-            <button class="btn" id="2" name="daire" onclick="hesapla()">Daire Alanı ve Çevre Hesaplama</button>
-            <button class="btn" id="3" name="dikdortgen" onclick="hesapla()">Dikdörtgen Alan ve Çevre Hesaplama</button>
-            <button class="btn" id="4" name="kare" onclick="hesapla()">Kare Alan ve Çevre Hesaplama </button>
-            <button class="btn" id="5" name="yamuk" onclick="hesapla()">Yamuk Alan ve Çevre Hesaplama </button>
-            <button class="btn" id="6" name="altigen" onclick="hesapla()">Altıgen Alan ve Çevre Hesaplama </button>
+  <div class="button">
+            <button class="btn" id="1" name="ucgen" onclick="btn1()" >Üçgenin Alanını ve Çevre  Hesaplama </button>
+            <button class="btn" id="2" name="daire" onclick="btn2()">Daire Alanı ve Çevre Hesaplama</button>
+            <button class="btn" id="3" name="dikdortgen" onclick="btn3()">Dikdörtgen Alan ve Çevre Hesaplama</button>
+            <button class="btn" id="4" name="kare" onclick="btn4()">Kare Alan ve Çevre Hesaplama </button>
+            <button class="btn" id="5" name="yamuk" onclick="btn5()">Yamuk Alan ve Çevre Hesaplama </button>
+            <button class="btn" id="6" name="altigen" onclick="btn6()">Altıgen Alan ve Çevre Hesaplama </button>
+        </div>
+        <div class="sekiller">
+           <div id="sekil_img" >
+              <img id="ucgen_sekil" src="https://ortaokulmatematik.com/wp-content/uploads/ucgende-taban-ve-yukseklik.jpg"  alt="Erişilemedi">
+              <img id="daire_sekil" src="https://www.delinetciler.net/resimler/2009/11/118.gif"  alt="Erişilemedi">
+              <img id="dikdortgen_sekil" src="https://www.inploid.com/embedded/images/1326102928_c9bf3a3f151712123355d9ca1876b916_1168883130[1]_4212311.jpg"    display="none"  alt="Erişilemedi">
+              <img id="yamuk_sekil" src="https://formul.gen.tr/images/Dik-Yamuk-Alan-Formulu-19.gif"   alt="Erişilemedi">
+              <img id="altigen_sekil" src="https://hesaplasana.net/wp-content/uploads/2020/06/d%C3%BCzg%C3%BCn-alt%C4%B1genin-alan%C4%B1-1.jpg"    alt="Erişilemedi">
+              <img id="kare_sekil" src="https://webders.net/img/geo/kare-cevresi-ve-alani.jpg"   alt="Erişilemedi">
+
+
+            </div>
         </div>
         <div class="input">
             <div class="kenar">
-                <label for="kenar" class="kenar" >Kenar:</label>
+                <label for="kenar" class="kenar"  id="txtkenar">Kenar:</label>
                 <input type="text" class="k" id="kenar" name="kenar">
             </div>
+           
             <div class="yukseklik">
-                <label for="yukseklik" class="yukseklik">Yükseklik:</label>
+                <label for="yukseklik" class="yukseklik" id="txtyukseklik">Yükseklik:</label>
                 <input type="text" class="h" id="yukseklik" name="yukseklik">
             </div>
            <div class="taban">
-                <label for="taban" class="taban">Alt Taban:</label>
+                <label for="taban" class="taban" id="txttaban">Alt Taban:</label>
                 <input type="text" class="t" id="taban" name="taban">
            </div>
            <div class="yaricap">
-            <label for="cap" class="yaricap">Yarı Çap:</label>
-            <input type="text" class="r" id="cap" name="yaricap">
+            <label for="cap" class="yaricap" id="txtcap">Yarı Çap:</label>
+            <input type="text" class="r" id="yaricap" name="yaricap">
+       </div>
+       <div id="acilar">
+         <label for="teta" class="txtteta" id="txtteta">Teta açısı:(0) <img src="" alt=""> </label>
+            <input type="text" class="teta" id="teta" name="teta">
+            <label for="alfa" class="txtalfa" id="txtalfa">Alfa açısı:(Q)</label>
+            <input type="text" class="alfa" id="alfa" name="alfa">
        </div>
            <div>
                <button class="btnHesap" id="7" onclick="hesapla()">Hesapla</button>
            </div>
            <div>
                <label for="result" >Sonuç:</label>
-               <input type="text" id="result" class="sonuc" disabled>
+               <p class="result" id="result" name="result"></p>
            </div>
         </div>
-
-            <script src="app.js"></script>
-
-
-
 </body>
 </html>
